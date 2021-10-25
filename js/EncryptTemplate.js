@@ -8,7 +8,11 @@
 
 
 */
-
+function getInputValue() {
+  // Selecting the input element and get its value 
+  return document.getElementById("inputId").value;
+  // Displaying the value
+}
 
 
 // global variables go at the top
@@ -16,11 +20,6 @@
 //index with coresponding letters
 let EKEY = ['!', '#', '$', '%', '^', '&', '*',' >', '<',' @', '-',' _', '+', '=', '?', '/', '2', '1', '3', '4', '5', '6', '7', '10'];
 let Letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-
-
-
-
 
 
 // utility functions
@@ -43,6 +42,7 @@ function getEKEY(letter){
 
 // can you in JS perform an islower/isupper and strlen?- yes
 function Encrypt(word){
+    let word = getInputValue();
     let Emessage  = [];
     for (i = 0, n = word.length; i < n; i++){
         // if (islower(word[i])){
@@ -90,11 +90,8 @@ function Encrypt(word){
 
 // SCOPE>>>>>>>>>>>
 
-function getInputValue() {
-    // Selecting the input element and get its value 
-    return document.getElementById("inputId").value;
-    // Displaying the value
-  }
+
+  
 
  function doSomething(){
     let score = Encrypt(getInputValue())
