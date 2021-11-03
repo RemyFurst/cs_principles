@@ -26,7 +26,7 @@ function draw() {
     var canvas = document.getElementById('canvas');
     if (canvas.getContext) {
       var ctx = canvas.getContext('2d');
-
+        // FIlstyle-color orientation of squaress
       ctx.fillStyle = 'rgb(200, 0, 0)';
       ctx.fillRect(x, y, width, height);
 

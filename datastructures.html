@@ -4,18 +4,32 @@
       <title>Data Structures</title>
            <script>
                let car ={
-                   gender: 'Car',
-                   Class: "sports cars",
+                   gender: '',
+                   Class: '',
                    name: "ferrari",
                    color: "red",
                    model: "Laferrari",
                    year:   2019,
                    weight: 1200,
-                   Horsepower: 1000,
-                   
+                   Horsepower: 1000,}
+                
+                }
 
-               }
-               cat.Name = input()
+                
+                class Car{
+                    constructor(gender,Class){
+                        this.gender = gender;
+                        this.Class = Class;
+                        this.model = model;
+                    }  
+
+                }
+                   
+                let car= new Car("Man", "sportscar")
+                let car2= new Car('woman', "sportscars")          
+                         
+               
+               car.name = input()
                console.log(car.name)
                function input() {
                    return document.getElementById("InputId").value;
